@@ -62,7 +62,7 @@
 	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">Profile Information</h5>
+				<h5 class="modal-title">Thông tin tài khoản</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -75,14 +75,14 @@
 							<div class="profile-img-wrap edit-img">
 								<img class="inline-block" src="{{!empty(auth()->user()->avatar) ? asset('storage/users/'.auth()->user()->avatar) : asset('assets/img/user.jpg') }}" alt="user">
 								<div class="fileupload btn">
-									<span class="btn-text">edit</span>
+									<span class="btn-text">Sửa</span>
 									<input name="avatar" class="upload" type="file">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<label>Full Name</label>
+										<label>Tên</label>
 										<input type="text" class="form-control" name="name" value="{{auth()->user()->name}}">
 									</div>
 								</div>
@@ -103,7 +103,7 @@
 					</div>
 					
 					<div class="submit-section">
-						<button class="btn btn-primary submit-btn">Submit</button>
+						<button class="btn btn-primary submit-btn">Lưu</button>
 					</div>
 				</form>
 			</div>

@@ -19,7 +19,7 @@ class LoginController extends Controller
         ]);
         $authenticate = auth()->attempt($request->only('email','password'));
         if(!$authenticate){
-            return back()->with('login_error',"Invalid Login Credentials");
+            return back()->with('login_error',trans('messages.login_error'));
         }
         return redirect()->route('dashboard');
     }

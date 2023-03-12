@@ -70,7 +70,7 @@ class OvertimeController extends Controller
             'description' => $request->description,
             'approved_by' => auth()->user()->id,
         ]);
-        $notification = notify('Cập nhật thành cộng!');
+        $notification = notify('Cập nhật thành công!');
         return back()->with($notification);
     }
 

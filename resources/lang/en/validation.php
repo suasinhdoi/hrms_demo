@@ -134,9 +134,24 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
-            'email.required' => 'Vui lòng nhập email',
+        'email' => [
+            'required' => 'Vui lòng nhập email',
+            'email' => 'Vui lòng nhập email!',
+        ],
+        'password' => [
+            'required' => 'Vui lòng nhập mật khẩu',
+        ],
+        'old_password' => [
+            'required' => 'Vui lòng nhập mật khẩu hiện tại',
+        ],
+        'firstname' => [
+            'required' => 'Vui lòng nhập tên nhân viên',
+        ],
+        'department' => [
+            'required' => 'Vui lòng nhập chọn phòng ban',
+        ],
+        'designation' => [
+            'required' => 'Vui lòng nhập chọn chức danh',
         ],
     ],
 
@@ -152,5 +167,5 @@ return [
     */
 
     'attributes' => [],
-
+    'login_error' => 'Email hoặc mật khẩu không đúng',
 ];

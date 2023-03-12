@@ -39,7 +39,7 @@
 						<th>Điện thoại</th>
 						<th class="text-nowrap">Ngày vào làm</th>
 						<th>Chức danh</th>
-						<th class="text-right no-sort">Action</th>
+						<th class="text-right no-sort">Khác</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -114,7 +114,7 @@
 							<div class="form-group">
 								<label>Phòng ban <span class="text-danger">*</span></label>
 								<select name="department" class="select">
-									<option>Chọn</option>
+									<option value="">Chọn</option>
 									@foreach ($departments as $department)
 										<option value="{{$department->id}}">{{$department->name}}</option>
 									@endforeach
@@ -125,7 +125,7 @@
 							<div class="form-group">
 								<label>Chức danh <span class="text-danger">*</span></label>
 								<select name="designation" class="select">
-									<option>Chọn</option>
+									<option value="">Chọn</option>
 									@foreach ($designations as $designation)
 										<option value="{{$designation->id}}">{{$designation->name}}</option>
 									@endforeach
